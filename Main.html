@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="icon" type="image/x-icon" href="TicTacToe.png">
+    <link rel="stylesheet" type="text/css" href="Main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/beb166c732.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="Main.js"></script>
+</head>
+<body>
+    <div class="mainsection">
+    <div class="mainbox">
+        <div class="row">
+            <div onclick="handleclick(this)" id="0" class="smallbox bt bl animate__animated animate__bounceIn animate__slow"></div>
+            <div onclick="handleclick(this)" id="1" class="smallbox bt animate__animated animate__bounceIn animate__slow"></div>
+            <div onclick="handleclick(this)" id="2" class="smallbox bt br animate__animated animate__bounceIn animate__slow"></div>
+        </div>
+        <div class="row">
+            <div onclick="handleclick(this)" id="3" class="smallbox bl animate__animated animate__bounceIn animate__slow"></div>
+            <div onclick="handleclick(this)" id="4" class="smallbox animate__animated animate__bounceIn animate__slow"></div>
+            <div onclick="handleclick(this)" id="5" class="smallbox br animate__animated animate__bounceIn animate__slow"></div>
+        </div>
+        <div class="row">
+            <div onclick="handleclick(this)" id="6" class="smallbox bb bl animate__animated animate__bounceIn animate__slow"></div>
+            <div onclick="handleclick(this)" id="7" class="smallbox bb animate__animated animate__bounceIn animate__slow"></div>
+            <div onclick="handleclick(this)" id="8" class="smallbox bb br animate__animated animate__bounceIn animate__slow"></div>
+        </div>
+    </div>
+    <div class="headingsection animate__animated animate__bounceIn animate__delay-2s animate__slow"><h1 class="heading">TIC<br>TAC<br>TOE<br><span style="font-size: 80px; line-height: 1.05;">&#128060;&#128048;</span></h1>
+        <button id="rules" onclick="rule()">RULES</button>
+        <h3 id="author">Made By: Gurumeet Saini</h3></div>
+    </div>
+    <div class="resultbox animate__animated animate__bounceIn animate__delay-1s animate__slow">
+        <h3 id="text">LET'S BEGIN</h3>
+        <button id="reset" onclick="resetgame()">PLAY AGAIN</button>
+    </div>
+</body>
+</html>
